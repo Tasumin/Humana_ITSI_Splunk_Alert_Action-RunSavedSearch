@@ -11,7 +11,7 @@ logger = logging.getLogger("RunSavedSearch")
 
 def run_saved_search(settings):
     try:
-        # Load alert action parameters
+        # Load alert action parameters.
         results_file = settings.get("results_file")
         with open(results_file, "r") as f:
             results = json.load(f)
